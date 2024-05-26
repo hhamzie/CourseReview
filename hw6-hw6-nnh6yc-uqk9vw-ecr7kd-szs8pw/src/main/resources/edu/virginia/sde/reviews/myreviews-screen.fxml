@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="edu.virginia.sde.reviews.MyReviewsScreenController">
+    <!-- Your FXML content goes here -->
+    <Label layoutX="275.0" layoutY="20.0" text="My Reviews" fx:id="titleField" >
+
+
+        <font>
+                <Font size="20" />
+        </font>
+    </Label>
+    <Button layoutX="300.0" layoutY="350.0" text="Back" fx:id="backButton" onAction="#handleBackAction"/>
+
+
+
+    <TableView fx:id="reviewsTableView" layoutX="10.0" layoutY="70.0" prefHeight="250.0" prefWidth="630.0">
+        <columns>
+            <TableColumn prefWidth="90" text="Subject" fx:id="subjectColumn"/>
+            <TableColumn prefWidth="90" text="Number" fx:id="numberColumn"/>
+            <TableColumn prefWidth="380" text="Title" fx:id="titleColumn"/>
+            <TableColumn prefWidth="90" text="Rating" fx:id="ratingColumn"/>
+        </columns>
+    </TableView>
+
+
+
+</AnchorPane>
